@@ -8,7 +8,7 @@ export default {
   run: async (req, res, mongo_client, issuerClient) => {
     const login_id = req.query.i;
     if (!login_id) {
-      return res.redirect("https://noxirity.com/");
+      return res.redirect("https://oauth.scfabyssal.com/");
     }
 
     const db = mongo_client.db("RobloxOAuth");
@@ -16,7 +16,7 @@ export default {
     const user = await collection.findOne({ login_id });
 
     if (!user) {
-      return res.redirect("https://noxirity.com/");
+      return res.redirect("https://oauth.scfabyssal.com/");
     }
 
     console.log(`User ${user.discord_id} is logging in`);

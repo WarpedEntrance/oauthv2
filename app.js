@@ -30,7 +30,7 @@ if (cluster.isPrimary) {
 
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
-  app.use(cookieParser(process.env.COOKIE_SECRET));
+
 
   MongoClient.connect(process.env.MONGO_URI)
     .then(async (client) => {

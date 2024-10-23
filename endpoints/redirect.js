@@ -29,7 +29,7 @@ export default {
       const user = await collection.findOne({ login_id });
 
       if (!user) {
-        return res.redirect("https://noxirity.com/");
+        return res.redirect("https://oauth.scfabyssal.com/");
       }
 
       const claims = tokenSet.claims();
@@ -72,7 +72,7 @@ export default {
               },
             }
           );
-          return `<p>You have received a <strong>Verified Sign</strong> in Arcade Haven as a reward for linking your Roblox account!</p>`;
+          return `<p>You have received a <strong>Verified Sign</strong> in Abyssal as a reward for linking your Roblox account!</p>`;
         }
 
         return `<p>Unfortunately, the <strong>Verified Sign</strong> is out of stock!</p>`;
@@ -90,7 +90,7 @@ export default {
         reward_msg
       );
     } catch (error) {
-      res.redirect("https://noxirity.com/");
+      res.redirect("https://oauth.scfabyssal.com/");
     }
   },
 };

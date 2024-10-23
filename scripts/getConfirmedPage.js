@@ -56,7 +56,7 @@ const html = `<!DOCTYPE html>
     <div class="container">
       <h2>Account Linked</h2>
       <p>
-        Your Roblox account ({{roblox_name}}) has been successfully linked to your Irity profile!
+        Your Roblox account ({{roblox_name}}) has been successfully linked to your discord profile!
       </p>
       {{__REWARD_MESSAGE__}}
       <p>

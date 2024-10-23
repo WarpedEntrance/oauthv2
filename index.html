@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCF-ABYSSAL VERIFACTION</title>
+    <meta content="SCF Abyssal" property="og:title" />
+    <meta content="Roblox Verify redirect" property="og:description" />
+    <meta content="#0B0B0B" data-react-helmet="true" name="theme-color" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="oxygen.fonts.css">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: rgb(255, 255, 255); /* Set default text color to white */
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://cdn.discordapp.com/attachments/1298424795695812680/1298438773377470474/d8nLdcu.png?ex=671990d7&is=67183f57&hm=d1c8f756a22e250592b0991c7617bd98ae6570f088590bd3aa2855cf1f1127a1&');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(11, 11, 11, 0.9); /* 90% transparent (10% opacity) */
+            z-index: 1;
+        }
+
+        .error, .stack-container {
+            position: relative;
+            z-index: 2; /* Ensure these elements are above the overlay */
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            height: 40px;
+            border-top-color: #33333342;
+            border-top-style: solid;
+            border-top-width: 1px;
+            width: 100%;
+        }
+
+        p.copyright {
+            position: absolute;
+            margin: 0;
+            top: 9px;
+            width: 100%;
+            font-size: 1em;
+            text-align: center;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error">
+            <h1>!</h1>
+            <h2>Looks good!</h2>
+            <p>Thanks for checking out abyssal!</p>
+            <p class="subtitle">Oauth_RESPONSE</p>
+        </div>
+
+        <div class="stack-container">
+            <!-- Repeat the card-container structure as needed -->
+            <div class="card-container">
+                <div class="perspec" style="--spreaddist: 125px; --scaledist: .75; --vertdist: -25px;">
+                    <div class="card">
+                        <div class="writing">
+                            <div class="topbar">
+                                <div class="red"></div>
+                                <div class="yellow"></div>
+                                <div class="green"></div>
+                            </div>
+                            <div class="code">
+                                <ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more card-containers as necessary -->
+        </div>
+
+        <footer>
+            <p class="copyright">©2024 SCF ABYSSAL</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -5,5 +5,5 @@
     "signed": true
   },
   "issuer_url": "https://apis.roblox.com/oauth/.well-known/openid-configuration",
-  "redirect_uri": "https://auth.noxirity.com/redirect"
+  "redirect_uri": "https://oauth.scfabyssal.com/redirect"
 }

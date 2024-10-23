@@ -126,7 +126,7 @@ export function getHomeHtml(userData) {
               <h1>Hello, ${userData.nickname}</h1>
               <p><b>Username:</b> ${userData.preferred_username}</p>
               <p><b>User ID:</b> ${userData.sub}</p>
-              <a href="${userData.profile}" target="_blank" class="button-link">🔗 View on Roblox</a>
+              <a href="${userData.profile}" target="_blank" class="button-link">🔗 View Roblox</a>
               <a href="/logout" class="button-link">Logout</a>
   
               <form action="/message" method="POST" class="message-form">

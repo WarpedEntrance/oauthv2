@@ -20,6 +20,7 @@
             align-items: center;
             overflow: hidden;
             color: rgb(255, 255, 255); /* Set default text color to white */
+            font-family: 'Oxygen', sans-serif;
         }
 
         .container {
@@ -42,67 +43,122 @@
             z-index: 1;
         }
 
-        .error, .stack-container {
+        .content {
             position: relative;
-            z-index: 2; /* Ensure these elements are above the overlay */
+            z-index: 2;
+            width: 80%;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #FFD700;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 20px;
+            color: #FF6347;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5em;
+            color: #D3D3D3;
+            margin-bottom: 15px;
         }
 
         footer {
             position: fixed;
             bottom: 0;
+            width: 100%;
             height: 40px;
             border-top-color: #33333342;
             border-top-style: solid;
             border-top-width: 1px;
-            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #D3D3D3;
         }
 
-        p.copyright {
-            position: absolute;
+        footer p {
             margin: 0;
-            top: 9px;
-            width: 100%;
-            font-size: 1em;
+            font-size: 0.9em;
+        }
+
+        .terms, .privacy-policy {
+            margin-top: 30px;
+        }
+
+        .terms a, .privacy-policy a {
+            color: #FF6347;
+            text-decoration: none;
+        }
+
+        .terms a:hover, .privacy-policy a:hover {
+            text-decoration: underline;
+        }
+
+        .back-button {
+            display: block;
+            margin-top: 20px;
             text-align: center;
-            bottom: 0;
+            font-size: 1.2em;
+            color: #FFD700;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="error">
-            <h1>!</h1>
-            <h2>Is this right?</h2>
-            <p>Seems your on the homepage should be somewhere else!</p>
-            <p class="subtitle">Oauth_RESPONSE</p>
-        </div>
-
-        <div class="stack-container">
-            <!-- Repeat the card-container structure as needed -->
-            <div class="card-container">
-                <div class="perspec" style="--spreaddist: 125px; --scaledist: .75; --vertdist: -25px;">
-                    <div class="card">
-                        <div class="writing">
-                            <div class="topbar">
-                                <div class="red"></div>
-                                <div class="yellow"></div>
-                                <div class="green"></div>
-                            </div>
-                            <div class="code">
-                                <ul>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="content">
+            <h1>SCF Abyssal Verification</h1>
+            <h2>Welcome to the SCF Abyssal Verification Page</h2>
+            <p>It seems like you're on the homepage but should be somewhere else. Please make sure to complete the required verification process.</p>
+            
+            <div class="terms">
+                <h2>Terms of Service</h2>
+                <p>By using our platform, you agree to the following terms:</p>
+                <ul>
+                    <li>Eligibility: You must be at least 13 years old to use our services.</li>
+                    <li>Account Security: You are responsible for maintaining the confidentiality of your account details.</li>
+                    <li>Prohibited Activities: Do not engage in illegal activities or violate others' rights.</li>
+                    <li>Limitation of Liability: We are not responsible for any damages arising out of your use of the service.</li>
+                    <li>Termination: We reserve the right to suspend or terminate your access for violations of these Terms.</li>
+                </ul>
+                <p><a href="#">Read full Terms of Service</a></p>
             </div>
-            <!-- Add more card-containers as necessary -->
-        </div>
 
-        <footer>
-            <p class="copyright">©2024 SCF ABYSSAL</p>
-        </footer>
+            <div class="privacy-policy">
+                <h2>Privacy Policy</h2>
+                <p>Your privacy is important to us. Here’s how we handle your information:</p>
+                <ul>
+                    <li>We collect personal information like your Roblox username and email for authentication purposes.</li>
+                    <li>Usage data, including IP address and browser details, helps us improve our service.</li>
+                    <li>We use cookies to enhance your experience and store preferences.</li>
+                    <li>Your data is protected with security measures, but no method is completely secure.</li>
+                    <li>We may update this Privacy Policy from time to time.</li>
+                </ul>
+                <p><a href="#">Read full Privacy Policy</a></p>
+            </div>
+
+            <div class="back-button">
+                <a href="/">Back to Home</a>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>©2024 SCF Abyssal</p>
+    </footer>
 
     <script type="text/javascript" src="script.js"></script>
 </body>

@@ -151,6 +151,7 @@ p {
 }
 
 .container {
+    background-image: url('background.png')
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
